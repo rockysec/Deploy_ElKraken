@@ -16,7 +16,7 @@ provider "digitalocean" {
 En donde:
 - DO_TOKEN corresponde al token de la api key de digital ocean en donde vas a desplegar el runner
 - PUB_KEY Es la llave publica de tu certificado a utilizar para conectarte via ssh al runner
-- PVT_KEY (opcional) Es la llave privada que utilizara tu servidor para enviar la informacion recopilada via ssh al repositorio y mantenerla respaldada
+- PVT_KEY (opcional) Es la llave privada que utilizara tu servidor para enviar la informacion recopilada via ssh al server o repositorio designado para mantenerla respaldada
 - SSH_RSA es el "know host" que necesitas tener aplicado en tu runner con el fin de que no te lo solicite cuando vayas a conectarte via ssh
   
 <img width="1119" alt="image" src="https://github.com/rockysec/deploy_vps/assets/48323046/d9fcf61c-fb54-4c74-a23f-17b4825b3832">
