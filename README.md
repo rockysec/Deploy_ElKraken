@@ -14,12 +14,12 @@ provider "digitalocean" {
 
 2 - Como segundo paso es necesario completar el action con los secrets necesarios para ejecutar el pipeline:
 En donde:
-- DO_TOKEN corresponde al token de la api key de digital ocean en donde vas a desplegar el runner
 - PUB_KEY Es la llave publica de tu certificado a utilizar para conectarte via ssh al runner
 - PVT_KEY (opcional) Es la llave privada que utilizara tu servidor para enviar la informacion recopilada via ssh al server o repositorio designado para mantenerla respaldada
 - SSH_RSA es el "know host" que necesitas tener aplicado en tu runner con el fin de que no te lo solicite cuando vayas a conectarte via ssh
   
-<img width="1119" alt="image" src="https://github.com/rockysec/deploy_vps/assets/48323046/d9fcf61c-fb54-4c74-a23f-17b4825b3832">
+<img width="802" alt="image" src="https://github.com/rockysec/Deploy_ElKraken/assets/48323046/2c86c525-29a9-4b3d-a3d8-c75cb7257c46">
+
 
 # Modo de uso
 Una vez configuradas las variables privadas necesarias solo debes trabajar con github CLI o WEB realizando cambios en el archivo "deploy_vps.tf", en este archivo puedes definir el tamaño de procesamiento del servidor a utilizar para el runner y los dominios a escanear. Una vez definas el dominio a escanear, realizas un commit y automaticamente se va desplegar el runner, se le van a instalar todas las herramientas necesarias para que El Kraken pueda funcionar y comenzara el escaneo.
