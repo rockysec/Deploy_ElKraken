@@ -1,3 +1,5 @@
+![kraken](https://github.com/rockysec/Deploy_ElKraken/assets/48323046/720a236e-6681-4caa-a33c-0d0782ee7c0b)
+
 # Automatizacion para el despliegue de servidores de escaneo
 Esta herramienta permite desplegar de manera automatizada nodos de escaneo via terraform a la nube de digital occean.
 Permite deplegar servidores con suficientes recursos para utilizar la herramienta "El Kraken" y analizar posibles vulnerabilidades presentes en algun dominio.
