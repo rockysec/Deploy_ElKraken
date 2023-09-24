@@ -42,10 +42,10 @@ inline = [
 "apt-get update",
 "apt-get install git -y",
 "apt-get install tmux -y",
-"git clone https://github.com/rockysec/ElKraken-Tools",
-"bash ElKraken-Tools/install.sh",
+"git clone https://github.com/rockysec/ElKraken",
+"bash ElKraken/Tools/install.sh",
 "touch ~/tools/ElKraken/domains.txt",
-# aca modificas el dominio vulweb.com por el dominio que desees, si quieres concatenar mas de un dominio en el mismo escaneo, puedes agregarlo de la siguiente manera solo ten en cuenta que esto aumentara los tiempos del uso del runner y con ello los costos "echo dominio1.com >> ~/tools/ElKraken/domains.txt && "echo dominio2.com >> ~/tools/ElKraken/domains.txt ...." 
+# aca se modifica vulweb.com por el o los dominios que desees auditar, para concatenar mas de un dominio en el mismo escaneo, se debe agregar de la siguiente manera solo teniendo en cuenta que esta accion aumentara los tiempos del uso del runner y con ello los costos "echo dominio1.com >> ~/tools/ElKraken/domains.txt && "echo dominio2.com >> ~/tools/ElKraken/domains.txt ...." 
 "echo vulweb.com >> ~/tools/ElKraken/domains.txt", 
 "tmux new-session -d -s myscan bash ~/tools/customscripts/loop_scan.sh ~/tools/ElKraken/domains.txt"
 ]
