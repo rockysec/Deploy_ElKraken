@@ -46,7 +46,7 @@ inline = [
 "bash ElKraken/Tools/install.sh",
 "touch ~/tools/ElKraken/domains.txt",
 # aca se modifica vulweb.com por el o los dominios que desees auditar, para concatenar mas de un dominio en el mismo escaneo, se debe agregar de la siguiente manera solo teniendo en cuenta que esta accion aumentara los tiempos del uso del runner y con ello los costos "echo dominio1.com >> ~/tools/ElKraken/domains.txt && "echo dominio2.com >> ~/tools/ElKraken/domains.txt ...." 
-"echo vulweb.com >> ~/tools/ElKraken/domains.txt", 
+"echo rockysec.com >> ~/tools/ElKraken/domains.txt", 
 "tmux new-session -d -s myscan bash ~/tools/customscripts/loop_scan.sh ~/tools/ElKraken/domains.txt"
 ]
 }
