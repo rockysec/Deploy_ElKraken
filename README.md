@@ -22,7 +22,7 @@ En donde:
 
 
 # Modo de uso
-Una vez configuradas las variables privadas necesarias solo debes trabajar con github CLI o WEB realizando cambios en el archivo "deploy_vps.tf", en este archivo puedes definir el tamaño de procesamiento del servidor a utilizar para el runner y los dominios a escanear. Una vez definas el dominio a escanear, realizas un commit y automaticamente se va desplegar el runner, se le van a instalar todas las herramientas necesarias para que El Kraken pueda funcionar y comenzara el escaneo.
+Una vez configuradas las variables privadas necesarias solo debes trabajar con github CLI o WEB realizando cambios en el archivo "droplet.tf", en este archivo puedes definir el tamaño de procesamiento del servidor a utilizar para el runner y los dominios a escanear. Una vez definas el dominio a escanear, realizas un commit y automaticamente se va desplegar el runner, se le van a instalar todas las herramientas necesarias para que El Kraken pueda funcionar y comenzara el escaneo.
 
 Nota: El despligue del servidor no tomara mas de 10 minutos. El tiempo de escaneo al dominio el cual estaras evaluando las vulnerabilidades, va depender de lo grande que sea el mismo, mientras mas subdominios tenga que analizar, mas tiempo va demorar, pero el tiempo por cada analisis a cada subdominio es bastante rapido teniendo un promedio de un par de minutos por cada uno de ellos.
 
